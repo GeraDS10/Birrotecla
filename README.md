@@ -1,27 +1,28 @@
-# Birrotecla
+# Birroteca
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+Birroteca es una aplicación web desarrollada en Angular con la temática de e-commerce de latas de cerveza.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalación
 
-## Code scaffolding
+Para ejecutar localmente el proyecto:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clona este repositorio.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `ng serve` para iniciar el servidor de desarrollo.
+4. Abre tu navegador y ve a `http://localhost:4200/`.
 
-## Build
+O acceder mediante stackblitz:
+https://stackblitz.com/~/github.com/GeraDS10/Birrotecla
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Datos del Estudiante
 
-## Running unit tests
+- Nombre: Gerardo David Saldain
+- DNI: 37.031.695
+- Email: gerardosaldain10@gmail.com
+- Sede: Tandil
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Licencia
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este proyecto está licenciado bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
