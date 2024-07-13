@@ -1,0 +1,37 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th class="item-th">Imagen</th>
+                <th class="item-th">Nombre</th>
+                <th class="item-th">Tipo</th>
+                <th class="item-th">Precio</th>
+                <th class="item-th">Stock</th>
+                <th class="item-th">Compra</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (beer of beers; track beer.name) {
+                <tr [ngClass]="{'clearance': beer.clearance}" class="row">
+                    <td class="td-item-image"><img [src]="beer.image" [alt]="beer.name" class="item-image"></td>
+                    <td class="item">{{beer.name}}</td>
+                    <td class="item">{{beer.type}}</td>
+                    <td class="item">{{beer.price | currency }}</td>
+                    @if (beer.stock > 0) {
+                        <td class="item">{{beer.stock}}</td>
+                    } @else {
+                        <td>SIN STOCK</td>
+                    }
+                    <td class="container-input-group">
+                        <div class="input-group">
+                            @if (beer.stock > 0) {
+                                 <app-input-integer [(quantity)]="beer.quantity" [max]="beer.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                                 <button class="buy-button" (click)="addToCart(beer)">Comprar</button>
+                                }
+                        </div> 
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>    
+</div>

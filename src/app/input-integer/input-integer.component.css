@@ -1,0 +1,30 @@
+.quantity-button {
+    padding: 8px 12px;
+    background-color: #eeff07;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 0 4px;
+  }
+  
+  .quantity-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .quantity-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .quantity-input:focus {
+    outline: none;
+    border-color: #d1e70b;
+    width: 10%;
+    text-align: center;
+  }

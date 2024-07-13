@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+
+.container-beer-list{
+    width: 70%;
+}
+
+.container-cart{
+width: 30%;
+}
